@@ -1,0 +1,27 @@
+@model IEnumerable<FacebookGoogleAPIProject.Models.AdMetric>
+
+<h2>Reklam Metrikleri</h2>
+<a href="/AdMetrics/Create">Yeni Metriği Ekle</a>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Reklam Adı</th>
+            <th>Görüntüleme</th>
+            <th>Tıklama</th>
+            <th>Bütçe</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var metric in Model)
+        {
+            <tr>
+                <td>@metric.Id</td>
+                <td>@metric.AdName</td>
+                <td>@metric.Views</td>
+                <td>@metric.Clicks</td>
+                <td>@metric.Budget</td>
+            </tr>
+        }
+    </tbody>
+</table>

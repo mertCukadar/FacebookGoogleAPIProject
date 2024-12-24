@@ -1,0 +1,18 @@
+@model FacebookGoogleAPIProject.Models.AdMetric
+
+<h2>Yeni Reklam Metriği Ekle</h2>
+<form method="post">
+    <label>Reklam Adı:</label>
+    <input type="text" name="AdName" />
+    <br />
+    <label>Görüntüleme:</label>
+    <input type="number" name="Views" />
+    <br />
+    <label>Tıklama:</label>
+    <input type="number" name="Clicks" />
+    <br />
+    <label>Bütçe:</label>
+    <input type="number" step="0.01" name="Budget" />
+    <br />
+    <button type="submit">Ekle</button>
+</form>
